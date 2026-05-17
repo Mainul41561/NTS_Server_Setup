@@ -181,7 +181,9 @@ Step 5:Start the synchronization protocol and Validate
 sudo systemctl restart chrony
 
 # Verification ( wait a couple of seconds to sync)
-chronyc sources -v #Look for the '^* nts-server.local' active baseline line marker
-sudo chronyc authdata #Run with sudo to bypass the 501 Not authorised restriction
+#Look for the '^* nts-server.local' active baseline line marker
+chronyc sources -v
+#Run with sudo to bypass the 501 Not authorised restriction
+sudo chronyc authdata 
 ``````
 ---
