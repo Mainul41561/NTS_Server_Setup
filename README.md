@@ -176,6 +176,7 @@ rtcsync
 makestep 1 3
 leapsectz right/UTC
 EOF
+```
 Step 5:Start the synchronization protocol and Validate
 ```bash
 sudo systemctl restart chrony
@@ -184,6 +185,6 @@ sudo systemctl restart chrony
 #Look for the '^* nts-server.local' active baseline line marker
 chronyc sources -v
 #Run with sudo to bypass the 501 Not authorised restriction
-sudo chronyc authdata 
-``````
+sudo chronyc authdata
+```
 ---
